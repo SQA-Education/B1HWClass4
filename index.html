@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>B1 Session 4: Banking Problems & Solutions</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',sans-serif;background:#5B5091;min-height:100vh;padding:20px}.container{max-width:800px;margin:0 auto}.header{background:#fff;border-radius:20px;padding:30px;margin-bottom:20px;text-align:center}.header h1{color:#5B5091;font-size:1.4em}.header p{color:#888}.badge{background:#F5A623;color:#fff;padding:4px 12px;border-radius:20px;font-size:.8em}.card{background:#fff;border-radius:16px;padding:25px;margin-bottom:20px}.card h2{color:#5B5091;margin-bottom:15px}label{font-weight:600;color:#333;display:block;margin-bottom:8px}input[type="text"]{width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px}.btn{background:#5B5091;color:#fff;border:none;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:10px}.btn:hover{background:#4a4080}.btn-orange{background:#F5A623}.section{display:none}.section.active{display:block}.reading-box{background:#f8f9fa;border-radius:12px;padding:20px;margin-bottom:20px;border-left:4px solid #5B5091;line-height:1.7}.question{background:#f8f9fa;border-radius:12px;padding:20px;margin:15px 0;border:1px solid #eee}.question h4{margin-bottom:15px;color:#333}.option{padding:14px;border:2px solid #e0e0e0;border-radius:10px;cursor:pointer;margin-bottom:10px;display:flex;align-items:center;gap:12px}.option:hover{border-color:#5B5091;background:#f8f6ff}.option.selected{border-color:#5B5091;background:#f0edff}.option.correct{border-color:#22c55e;background:#f0fdf4}.option.incorrect{border-color:#ef4444;background:#fef2f2}.circle{width:20px;height:20px;border:2px solid #ccc;border-radius:50%;flex-shrink:0}.option.selected .circle{border-color:#5B5091;background:#5B5091}textarea{width:100%;min-height:120px;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;font-family:inherit}textarea:focus{outline:none;border-color:#5B5091}.progress{height:8px;background:#e0e0e0;border-radius:4px;margin-bottom:20px}.progress-bar{height:100%;background:#F5A623;border-radius:4px}.score-card{background:linear-gradient(135deg,#5B5091,#7B6DB5);border-radius:20px;padding:35px;color:#fff;text-align:center}.score-big{font-size:4em;font-weight:700}.scores{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}.scores>div{background:rgba(255,255,255,.15);border-radius:12px;padding:12px}.scores label{font-size:.75em;opacity:.9}.scores span{font-size:1.4em;font-weight:700;display:block}.fill-input{width:120px;border:none;border-bottom:2px solid #5B5091;text-align:center;font-size:16px;padding:5px;background:transparent}.fill-input:focus{outline:none}.record-btn{width:80px;height:80px;border-radius:50%;background:#fff;border:3px solid #5B5091;cursor:pointer;margin:20px auto;display:flex;align-items:center;justify-content:center}.record-btn.recording{border-color:#ef4444;animation:pulse 1.5s infinite}.record-dot{width:24px;height:24px;background:#5B5091;border-radius:50%}.record-btn.recording .record-dot{background:#ef4444;border-radius:4px;width:20px;height:20px}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}50%{box-shadow:0 0 0 15px rgba(239,68,68,0)}}.timer{text-align:center;font-size:28px;font-weight:700;color:#5B5091}.status{text-align:center;color:#666;margin-top:10px}audio{width:100%;margin-top:15px}.hidden{display:none}.feedback{background:#f8f6ff;border:1px solid #5B5091;border-radius:12px;padding:20px;margin-top:15px}.transcript-box{background:#f8f9fa;border:2px solid #e0e0e0;border-radius:12px;padding:14px;min-height:90px;white-space:pre-wrap;color:#333}.transcript-label{font-weight:600;color:#333;display:block;margin:15px 0 8px}@media(max-width:600px){.scores{grid-template-columns:repeat(3,1fr)}}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',sans-serif;background:#5B5091;min-height:100vh;padding:20px}.container{max-width:800px;margin:0 auto}.header{background:#fff;border-radius:20px;padding:30px;margin-bottom:20px;text-align:center}.header h1{color:#5B5091;font-size:1.4em}.header p{color:#888}.badge{background:#F5A623;color:#fff;padding:4px 12px;border-radius:20px;font-size:.8em}.card{background:#fff;border-radius:16px;padding:25px;margin-bottom:20px}.card h2{color:#5B5091;margin-bottom:15px}label{font-weight:600;color:#333;display:block;margin-bottom:8px}input[type="text"],select{width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px}.btn{background:#5B5091;color:#fff;border:none;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:10px}.btn:hover{background:#4a4080}.btn-orange{background:#F5A623}.section{display:none}.section.active{display:block}.reading-box{background:#f8f9fa;border-radius:12px;padding:20px;margin-bottom:20px;border-left:4px solid #5B5091;line-height:1.7}.question{background:#f8f9fa;border-radius:12px;padding:20px;margin:15px 0;border:1px solid #eee}.question h4{margin-bottom:15px;color:#333}.option{padding:14px;border:2px solid #e0e0e0;border-radius:10px;cursor:pointer;margin-bottom:10px;display:flex;align-items:center;gap:12px}.option:hover{border-color:#5B5091;background:#f8f6ff}.option.selected{border-color:#5B5091;background:#f0edff}.option.correct{border-color:#22c55e;background:#f0fdf4}.option.incorrect{border-color:#ef4444;background:#fef2f2}.circle{width:20px;height:20px;border:2px solid #ccc;border-radius:50%;flex-shrink:0}.option.selected .circle{border-color:#5B5091;background:#5B5091}textarea{width:100%;min-height:120px;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;font-family:inherit}textarea:focus{outline:none;border-color:#5B5091}.progress{height:8px;background:#e0e0e0;border-radius:4px;margin-bottom:20px}.progress-bar{height:100%;background:#F5A623;border-radius:4px}.score-card{background:linear-gradient(135deg,#5B5091,#7B6DB5);border-radius:20px;padding:35px;color:#fff;text-align:center}.score-big{font-size:4em;font-weight:700}.scores{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}.scores>div{background:rgba(255,255,255,.15);border-radius:12px;padding:12px}.scores label{font-size:.75em;opacity:.9}.scores span{font-size:1.4em;font-weight:700;display:block}.fill-input{width:120px;border:none;border-bottom:2px solid #5B5091;text-align:center;font-size:16px;padding:5px;background:transparent}.fill-input:focus{outline:none}.record-btn{width:80px;height:80px;border-radius:50%;background:#fff;border:3px solid #5B5091;cursor:pointer;margin:20px auto;display:flex;align-items:center;justify-content:center}.record-btn.recording{border-color:#ef4444;animation:pulse 1.5s infinite}.record-dot{width:24px;height:24px;background:#5B5091;border-radius:50%}.record-btn.recording .record-dot{background:#ef4444;border-radius:4px;width:20px;height:20px}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}50%{box-shadow:0 0 0 15px rgba(239,68,68,0)}}.timer{text-align:center;font-size:28px;font-weight:700;color:#5B5091}.status{text-align:center;color:#666;margin-top:10px}audio{width:100%;margin-top:15px}.hidden{display:none}.feedback{background:#f8f6ff;border:1px solid #5B5091;border-radius:12px;padding:20px;margin-top:15px}.transcript-box{background:#f8f9fa;border:2px solid #e0e0e0;border-radius:12px;padding:14px;min-height:90px;white-space:pre-wrap;color:#333}.transcript-label{font-weight:600;color:#333;display:block;margin:15px 0 8px}@media(max-width:600px){.scores{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
@@ -14,14 +14,9 @@
 
 <div class="section active" id="start">
 <div class="card"><label>Your Full Name</label><input type="text" id="studentName" placeholder="Enter your name...">
-<label>Your Teacher</label>
-<select id="teacherName" style="width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px" onchange="updateClasses()">
-  <option value="">Select your teacher...</option>
-  <option value="Laura Ebel">Laura Ebel</option>
-  <option value="Jonelle Williams">Jonelle Williams</option>
-</select>
+<input type="hidden" id="teacherName" value="">
 <label>Your Class</label>
-<select id="className" style="width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px">
+<select id="className" onchange="setTeacher(this)">
 <option value="">-- Select your class --</option>
 <optgroup label="Laura Ebel">
 <option value="3088" data-teacher="Laura Ebel">3088 - Mon/Wed 9:00 AM (Laura)</option>
@@ -178,34 +173,18 @@
 </div>
 
 <script>
-const SESSION='4';let name='',scores={l:0,v:0,w:0,s:0,g:0},writingText='',speakingTranscript='';let oldscores={l:0,v:0,w:0,s:0,g:0};let isRec=false,recTime=0,recTimer=null,recognition=null;
+const SESSION='4';let name='',scores={l:0,v:0,w:0,s:0,g:0},writingText='',speakingTranscript='';let isRec=false,recTime=0,recTimer=null,recognition=null;
+let submitted=false;
+function setTeacher(sel){
+  var opt=sel.options[sel.selectedIndex];
+  document.getElementById('teacherName').value=opt?(opt.getAttribute('data-teacher')||''):'';
+}
 function startQuiz(){
   name=document.getElementById('studentName').value.trim();
   if(!name){alert('Please enter your name');return;}
-  if(!document.getElementById('teacherName').value){alert('Please select your teacher');return;}
   if(!document.getElementById('className').value){alert('Please select your class');return;}
+  setTeacher(document.getElementById('className'));
   showSection('s1');
-}
-const TEACHER_CLASSES = {
-  'Laura Ebel': [
-    {value:'3088', label:'Mon/Wed 9:00 AM - 10:30 AM'},
-    {value:'3090', label:'Mon/Wed 6:30 PM - 8:00 PM'},
-    {value:'3095', label:'Tue/Thu 11:00 AM - 12:30 PM'},
-  ],
-  'Jonelle Williams': [
-    {value:'3098', label:'Tue/Thu 6:30 PM - 8:00 PM'},
-    {value:'3101', label:'Tue/Thu 8:30 PM - 10:00 PM'},
-  ],
-};
-function updateClasses(){
-  const teacher=document.getElementById('teacherName').value;
-  const clsSel=document.getElementById('className');
-  clsSel.innerHTML='<option value="">Select your class...</option>';
-  (TEACHER_CLASSES[teacher]||[]).forEach(c=>{
-    const opt=document.createElement('option');
-    opt.value=c.value;opt.textContent=c.label;
-    clsSel.appendChild(opt);
-  });
 }
 function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
 function sel(el){el.parentElement.querySelectorAll('.option').forEach(o=>o.classList.remove('selected'));el.classList.add('selected');}
@@ -236,11 +215,15 @@ function startRec(){
   recTimer=setInterval(()=>{recTime++;document.getElementById('timer').textContent=Math.floor(recTime/60)+':'+(recTime%60).toString().padStart(2,'0');},1000);
   recognition=new SR();
   recognition.continuous=false;
-  recognition.interimResults=false;
+  recognition.interimResults=true;
   recognition.lang='en-US';
   recognition.onresult=function(e){
-    speakingTranscript+=e.results[0][0].transcript+' ';
-    document.getElementById('transcript').textContent=speakingTranscript.trim();
+    var interim='';
+    for(var i=e.resultIndex;i<e.results.length;i++){
+      if(e.results[i].isFinal)speakingTranscript+=e.results[i][0].transcript+' ';
+      else interim+=e.results[i][0].transcript;
+    }
+    document.getElementById('transcript').textContent=(speakingTranscript+interim).trim()||'Listening...';
   };
   recognition.onerror=function(){};
   recognition.onend=function(){ if(isRec){ try{recognition.start();}catch(e){} } };
@@ -252,6 +235,9 @@ function stopRec(){
   document.getElementById('recBtn').classList.remove('recording');
   document.getElementById('recStatus').textContent='Recording saved! Review your transcript, then continue.';
   document.getElementById('sBtn').disabled=false;
+  if(!speakingTranscript.trim()){
+    document.getElementById('transcript').textContent='No transcript captured. Try again.';
+  }
 }
 
 function checkSpeaking(){
@@ -271,40 +257,34 @@ function checkSpeaking(){
 }
 function submitFinal(){let correct=0;document.querySelectorAll('#s5 .question').forEach(q=>{const sel=q.querySelector('.option.selected');const ans=q.dataset.c;if(sel){if(sel.dataset.v===ans){correct++;sel.classList.add('correct');}else{sel.classList.add('incorrect');q.querySelector('[data-v="'+ans+'"]').classList.add('correct');}}});scores.g=correct;const total=scores.l+scores.v+scores.w+scores.s+scores.g;const pct=Math.round(total/57*100);document.getElementById('finalPct').textContent=pct+'%';document.getElementById('studentDisplay').textContent=name;document.getElementById('scL').textContent=scores.l+'/3';document.getElementById('scV').textContent=scores.v+'/6';document.getElementById('scW').textContent=scores.w+'/20';document.getElementById('scS').textContent=scores.s+'/20';document.getElementById('scG').textContent=scores.g+'/8';showSection('results');}
 function submitToTeacher(){
-  const btn=document.getElementById('submitBtn');
+  if(submitted)return;
+  submitted=true;
+  var btn=document.getElementById('submitBtn');
   if(btn){btn.disabled=true;btn.textContent='Submitting...';}
-  const pct=Math.round((scores.l+scores.v+scores.w+scores.s+scores.g)/57*100);
-  const form=document.createElement('form');
-  form.method='POST';
-  form.action='https://docs.google.com/forms/d/e/1FAIpQLSf9uEs5MqWLveyoaMBxeWx3pW1b90siwgaom766CpwqnOI7Dg/formResponse';
-  form.target='hidden_iframe';
-  form.style.display='none';
-  const fields={
-    'entry.518151516':name,
-    'entry.864654596':SESSION,
-    'entry.258952242':scores.l+'/3',
-    'entry.859150584':scores.v+'/6',
-    'entry.1121796741':scores.w+'/20',
-    'entry.1435469716':scores.s+'/20',
-    'entry.1998281944':scores.g+'/8',
-    'entry.1207114914':pct+'%',
-    'entry.939912807':writingText,
-    'entry.2086302086':speakingTranscript||'No transcript captured',
-    'entry.710610284':document.getElementById('className').value
-  };
-  Object.keys(fields).forEach(key=>{
-    const input=document.createElement('input');
-    input.type='hidden';input.name=key;input.value=fields[key];
-    form.appendChild(input);
+  var pct=Math.round((scores.l+scores.v+scores.w+scores.s+scores.g)/57*100);
+  var formData=new FormData();
+  formData.append('entry.518151516',name);
+  formData.append('entry.710610284',document.getElementById('className').value);
+  formData.append('entry.864654596',SESSION);
+  formData.append('entry.258952242',scores.l+'/3');
+  formData.append('entry.859150584',scores.v+'/6');
+  formData.append('entry.1121796741',scores.w+'/20');
+  formData.append('entry.1435469716',scores.s+'/20');
+  formData.append('entry.1998281944',scores.g+'/8');
+  formData.append('entry.1207114914',pct+'%');
+  formData.append('entry.939912807',writingText||'');
+  formData.append('entry.2086302086',speakingTranscript||'No transcript captured');
+  fetch('https://docs.google.com/forms/d/e/1FAIpQLSf9uEs5MqWLveyoaMBxeWx3pW1b90siwgaom766CpwqnOI7Dg/formResponse',{method:'POST',mode:'no-cors',body:formData})
+  .then(function(){
+    if(btn){btn.textContent='Submitted ✓';btn.style.background='#22c55e';}
+    var status=document.getElementById('submitStatus');
+    if(status){status.innerHTML='✅ <strong>Homework submitted successfully!</strong><br><span style="font-size:0.9em;color:#555">Your teacher has received your work.</span><br><br><button onclick="location.reload()" style="margin-top:8px;padding:10px 20px;background:#5B5091;color:#fff;border:none;border-radius:10px;font-size:15px;cursor:pointer;font-family:inherit">🔄 Retake Homework</button>';status.style.display='block';}
+  }).catch(function(){
+    submitted=false;
+    if(btn){btn.disabled=false;btn.textContent='Failed - Tap to Retry';btn.style.background='#ef4444';}
+    var status=document.getElementById('submitStatus');
+    if(status){status.innerHTML='Submission failed. Check your internet and try again.';status.style.display='block';status.style.background='#fef2f2';status.style.borderColor='#ef4444';status.style.color='#c62828';}
   });
-  let iframe=document.getElementById('hidden_iframe');
-  if(!iframe){iframe=document.createElement('iframe');iframe.name='hidden_iframe';iframe.id='hidden_iframe';iframe.style.display='none';document.body.appendChild(iframe);}
-  document.body.appendChild(form);
-  form.submit();
-  form.remove();
-  if(btn){btn.disabled=true;btn.textContent='Submitted ✓';btn.style.background='#22c55e';}
-  const status=document.getElementById('submitStatus');
-  if(status){status.innerHTML='✅ <strong>Homework submitted successfully!</strong><br><span style="font-size:0.9em;color:#555">Your teacher has received your work.</span><br><br><button onclick="location.reload()" style="margin-top:8px;padding:10px 20px;background:#5B5091;color:#fff;border:none;border-radius:10px;font-size:15px;cursor:pointer;font-family:inherit">🔄 Retake Homework</button>';status.style.display='block';}
 }
 </script>
 </body>
